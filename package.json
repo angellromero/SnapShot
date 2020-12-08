@@ -1,4 +1,16 @@
 {
+  "scripts": {
+    "xdn": "xdn",
+    "xdn:start": "xdn run",
+    "xdn:build": "xdn build",
+    "xdn:deploy": "xdn deploy",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "name": "snapshot",
   "version": "0.1.0",
   "private": true,
@@ -12,14 +24,6 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +39,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@xdn/cli": "^2.30.2",
+    "@xdn/core": "^2.30.2",
+    "@xdn/devtools": "^2.30.2",
+    "@xdn/prefetch": "^2.30.2"
   }
 }
